@@ -922,14 +922,9 @@ open class ActivityIndicatorButton: UIControl {
 
     fileprivate func setImage(_ image: UIImage?) {
         self.imageView.image = image
-        self.imageView.sizeToFit()
+        self.imageView.contentMode = .scaleAspectFit
+//        self.imageView.sizeToFit()
     }
-
-
-
-
-
-
 
     // MARK: - Layout
     
