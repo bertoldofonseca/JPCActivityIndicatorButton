@@ -323,7 +323,7 @@ open class ActivityIndicatorButton: UIControl {
     
     /// If true the circular background of this control is colored with the tint color and the image is colored white. Otherwise the background is clear and the image is tinted. Image color is only adjusted if it is a template image.
     /// :see: ActivityIndicatorButtonStyle
-    @IBInspectable open var style: ActivityIndicatorButtonStyle = .solid {
+    open var style: ActivityIndicatorButtonStyle = .solid {
         didSet {
             self.updateAllColors()
         }
@@ -1085,12 +1085,12 @@ open class ActivityIndicatorButton: UIControl {
 
     // MARK: - Hit Animation
 
-    func handleTouchUp(_ sender: ActivityIndicatorButton) {
+    @objc func handleTouchUp(_ sender: ActivityIndicatorButton) {
 
         self.createRippleHitAnimation(true)
     }
 
-    func handleTouchDown(_ sender: ActivityIndicatorButton) {
+    @objc func handleTouchDown(_ sender: ActivityIndicatorButton) {
 
         self.createRippleHitAnimation(false)
     }

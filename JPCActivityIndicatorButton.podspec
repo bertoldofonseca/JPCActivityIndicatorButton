@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JPCActivityIndicatorButton"
-  s.version      = "3.1.0"
+  s.version      = "3.2.0"
   s.summary      = "An implementation of the progress control used in the App Store app with styling inspired by Google's material design."
 
   s.description  = <<-DESC
